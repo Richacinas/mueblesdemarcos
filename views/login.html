@@ -1,0 +1,36 @@
+{% extends 'layout/mainLayout.html' %}
+
+{% set bodyclass="login" %}
+
+{% block content %}
+	{% include 'partials/sections/enterLogin.html' %}
+	<section id="programas" class="row">
+		<div class="wrapper">
+			<div id="programs-list" class="row">
+				<p class="title center"><b>Programa</b></p>
+				{% include 'partials/program-list.html' %}
+			</div>
+		</div>
+	</section>
+	{% include 'partials/sections/premios.html' %}
+	{% include 'partials/sections/ranking.html' %}
+	
+	<!--section id="enter" class="row">
+		<div class="wrapper">
+			<p class="title center">Adelántate al jurado y gana premios cada semana haciendo tu quiniela. Regístrate ya y empieza a votar en la Liga Masterchef.</p>
+			<div class="login-pannel">
+				<a class="btn btn-default twitter" role="button" href="/ligamasterchef/login/Twitter/" title="Haz login con Twitter">Twitter</a>
+				<a class="btn btn-default facebook" role="button" href="/ligamasterchef/login/Facebook/" title="Haz login con Facebook">Facebook</a>
+				<a class="btn btn-default google" role="button" href="/ligamasterchef/login/Google/" title="Haz login con Facebook">Google</a>
+			</div>
+		</div>
+	</section-->
+	<section id="condiciones" class="row">
+		<div class="wrapper">
+			<p class="title center">Condiciones Legales</p>
+			<div class="box">
+				{% include 'partials/condicionesUso.html' %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

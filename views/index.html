@@ -1,0 +1,36 @@
+{% extends 'layout/mainLayout.html' %}
+
+{% set bodyclass="joined" %}
+
+{% block styles %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{baseURL}}/css/cs-select.css">
+	<link rel="stylesheet" href="{{baseURL}}/css/cs-skin-slide.css">
+{% endblock %}
+
+{% block content %}
+	{% if user_profile %}
+	<section id="profile" class="row">
+		<div class="wrapper">
+			{% include 'partials/userProfile.html' %}
+		</div>
+	</section>
+	{% endif %}
+	<section id="concursantes" class="row">
+		<div class="wrapper">
+			<p class="title center">Bienvenido a la Liga MasterChef</p>
+			<p class="subtitle center">¿A qué esperas para participar?</p>
+			<p class="center"><a href="{{baseURL}}/programa/{{currentProgram.number}}/" class="btn btn-default">¡vota ya!</a></p>
+		</div>
+	</section>
+	<section id="programas" class="row">
+		<div class="wrapper">
+			<div id="programs-list" class="row">
+				<p class="title center"><b>Programa</b></p>
+				{% include 'partials/program-list.html' %}
+			</div>
+		</div>
+	</section>
+	{% include 'partials/sections/ranking.html' %}
+    {% include 'partials/sections/premios.html' %}
+{% endblock %}

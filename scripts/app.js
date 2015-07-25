@@ -5,8 +5,7 @@
  */
 
 
-$(document).ready(function() {
-
+/*$(document).ready(function() {
     $('#contact').html5form({
             allBrowsers : true,
             responseDiv : '#response',
@@ -14,5 +13,4 @@ $(document).ready(function() {
             colorOn :'#fff'
     });
     $('#spam-check').removeAttr('required');
-
-});
+});*/

@@ -1,0 +1,16 @@
+{
+    "dormitorios": [
+        {
+            "src": "image_8.jpg",
+            "alt": "prueba1"
+        },
+        {
+            "src": "image_9.jpg",
+            "alt": "prueba1"
+        },
+        {
+            "src": "image_15.jpg",
+            "alt": "prueba1"
+        }
+    ]
+}
